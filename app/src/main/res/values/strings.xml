@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Food Wala</string>
+    <string name="logo_image">logo_image</string>
+    <string name="waves_of_food">Waves Of Food</string>
+    <string name="deliver_favorite_food">Deliver Favorite Food</string>
+    <string name="design_by_dev">Design By\nJoy Mridha</string>
+    <string name="start_screen_image">Start_Screen_Image</string>
+    <string name="enjoy_restaurant_quality_meals_nat_home">Enjoy Restaurant Quality Meals\nat Home</string>
+    <string name="next">Next</string>
+</resources>
