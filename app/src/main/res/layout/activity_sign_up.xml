@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logoIV"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/logo_image"
+            android:src="@drawable/logo_ic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeon_sung"
+            android:text="@string/waves_of_food"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="@+id/logoIV"
+            app:layout_constraintStart_toStartOf="@+id/logoIV"
+            app:layout_constraintTop_toBottomOf="@+id/logoIV" />
+
+        <TextView
+            android:id="@+id/textTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato"
+            android:text="@string/deliver_favorite_food"
+            android:textColor="@color/textColor"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textTV"
+            app:layout_constraintStart_toStartOf="@+id/textTV"
+            app:layout_constraintTop_toBottomOf="@+id/textTV" />
+
+        <TextView
+            android:id="@+id/textTV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/sign_up_here"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textTV2"
+            app:layout_constraintStart_toStartOf="@+id/textTV2"
+            app:layout_constraintTop_toBottomOf="@+id/textTV2" />
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="325dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edittext_shape"
+            android:drawableStart="@drawable/user1_ic"
+            android:drawablePadding="15dp"
+            android:elevation="5dp"
+            android:fontFamily="@font/lato"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/textTV3"
+            app:layout_constraintStart_toStartOf="@id/textTV3"
+            app:layout_constraintTop_toBottomOf="@+id/textTV3" />
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="325dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edittext_shape"
+            android:drawableStart="@drawable/mail2_ic"
+            android:drawablePadding="15dp"
+            android:elevation="5dp"
+            android:fontFamily="@font/lato"
+            android:hint="@string/email_or_phone_number"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/nameET"
+            app:layout_constraintStart_toStartOf="@id/nameET"
+            app:layout_constraintTop_toBottomOf="@+id/nameET" />
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="325dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_shape"
+            android:drawableStart="@drawable/lock_ic"
+            android:drawablePadding="15dp"
+            android:elevation="5dp"
+            android:fontFamily="@font/lato"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hintColor"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/emailET"
+            app:layout_constraintStart_toStartOf="@id/emailET"
+            app:layout_constraintTop_toBottomOf="@+id/emailET" />
+
+        <TextView
+            android:id="@+id/textTV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/yeon_sung"
+            android:text="@string/or"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/passwordET"
+            app:layout_constraintStart_toStartOf="@+id/passwordET"
+            app:layout_constraintTop_toBottomOf="@+id/passwordET"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/yeon_sung"
+            android:text="@string/sign_up_with"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/textTV4"
+            app:layout_constraintStart_toStartOf="@+id/textTV4"
+            app:layout_constraintTop_toBottomOf="@+id/textTV4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/facebookBT"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/white_button"
+            android:drawableStart="@drawable/facebook_ic"
+            android:drawablePadding="15dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/lato"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/googleBT"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/googleBT"
+            android:layout_width="152dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/white_button"
+            android:drawableStart="@drawable/google_ic"
+            android:drawablePadding="15dp"
+            android:elevation="10dp"
+            android:fontFamily="@font/lato"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/google"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/facebookBT"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createBT"
+            android:layout_width="157dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/green_button_design"
+            android:elevation="10dp"
+            android:fontFamily="@font/yeon_sung"
+            android:text="@string/create_account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/googleBT" />
+
+        <TextView
+            android:id="@+id/allreadyHaveAccountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/lato"
+            android:padding="5dp"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/textColor"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/createBT"
+            app:layout_constraintStart_toStartOf="@+id/createBT"
+            app:layout_constraintTop_toBottomOf="@+id/createBT" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

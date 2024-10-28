@@ -2,25 +2,25 @@ package com.example.foodwala
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.foodwala.databinding.ActivitySplashBinding
+import com.example.foodwala.databinding.ActivityLoginBinding
 
-class SplashActivity : AppCompatActivity() {
-    private var _binding: ActivitySplashBinding? = null
+class LoginActivity : AppCompatActivity() {
+    private var _binding: ActivityLoginBinding? = null
     private val binding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
-        _binding = ActivitySplashBinding.inflate(layoutInflater)
+        _binding = ActivityLoginBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        Handler().postDelayed({
-            val intent = Intent(this@SplashActivity, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }, 0)
+        binding.apply {
+            dontHaveAccountTV.setOnClickListener {
+                val intent = Intent(this@LoginActivity, SignUpActivity::class.java)
+                startActivity(intent)
+            }
+        }
     }
 
     override fun onDestroy() {
